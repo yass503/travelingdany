@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agafay Desert Experience | Marrakesh, Morocco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">Agafay<span>Desert</span></div>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home" data-lang-key="home">Home</a></li>
+                    <li><a href="#package" data-lang-key="package">Package</a></li>
+                    <li><a href="#about" data-lang-key="about">About</a></li>
+                    <li><a href="#contact" data-lang-key="contact">Contact</a></li>
+                </ul>
+                
+                <div class="language-currency">
+                    <select id="language-selector" aria-label="Select language">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="es">Español</option>
+                    </select>
+                    
+                    <select id="currency-selector" aria-label="Select currency">
+                        <option value="MAD">MAD (Moroccan Dirham)</option>
+                        <option value="EUR">EUR (Euro)</option>
+                        <option value="USD">USD (US Dollar)</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <h1 data-lang-key="hero-title">Experience the Magic of Agafay Desert</h1>
+                <p data-lang-key="hero-text">Discover our exclusive desert adventure package including quad biking, camel ride, and traditional Moroccan tea session.</p>
+                <a href="#package" class="btn" data-lang-key="explore-btn">View Package</a>
+            </div>
+        </section>
+        
+        <section class="services" id="package">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-lang-key="package-title">Desert Adventure Package</h2>
+                    <p data-lang-key="package-subtitle">All-in-one experience in the Agafay Desert</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Beautiful Agafay Desert Landscape" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 data-lang-key="package-name">Complete Desert Experience</h3>
+                            <p data-lang-key="package-desc">Enjoy everything the Agafay Desert has to offer in one perfect package.</p>
+                            <div class="price" data-price="400">400 MAD / person</div>
+                            
+                            <div class="included">
+                                <h4 data-lang-key="included-title">What's Included:</h4>
+                                <ul>
+                                    <li data-lang-key="included-1">1-hour quad biking adventure</li>
+                                    <li data-lang-key="included-2">Camel ride through the desert</li>
+                                    <li data-lang-key="included-3">Traditional Moroccan tea/coffee session</li>
+                                    <li data-lang-key="included-4">Professional guides</li>
+                                    <li data-lang-key="included-5">All safety equipment</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="#contact" class="btn" data-lang-key="book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-lang-key="about-title">About Agafay Desert</h2>
+                    <p data-lang-key="about-subtitle">Just 30 minutes from Marrakesh, a unique desert experience awaits</p>
+                </div>
+                
+                <div class="about-content">
+                    <p data-lang-key="about-text1">The Agafay Desert is a stunning rocky desert located just outside Marrakesh, offering breathtaking landscapes that rival the Sahara. Unlike the sandy dunes of Merzouga, Agafay features a unique combination of rocky plateaus, small dunes, and dramatic vistas of the Atlas Mountains.</p>
+                    
+                    <p data-lang-key="about-text2">Our tour combines authentic Moroccan experiences with modern comforts, allowing you to immerse yourself in the beauty of the desert without traveling far from Marrakesh. Whether you're looking for adventure, relaxation, or cultural experiences, we have the perfect package for you.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-lang-key="testimonials-title">What Our Guests Say</h2>
+                    <p data-lang-key="testimonials-subtitle">Hear from travelers who experienced our desert adventure</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah" loading="lazy">
+                            <div>
+                                <h4>Sarah M.</h4>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"The Agafay Desert experience was magical! The quad biking was exhilarating and the sunset tea ceremony was unforgettable. Highly recommend this tour!"</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Jean" loading="lazy">
+                            <div>
+                                <h4>Jean P.</h4>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"As a frequent traveler, I can say this was one of my best experiences in Morocco. The guides were professional and the landscape breathtaking."</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maria" loading="lazy">
+                            <div>
+                                <h4>Maria G.</h4>
+                                <div class="rating">★★★★☆</div>
+                            </div>
+                        </div>
+                        <p>"Wonderful day in the desert! The camel ride was smooth and the tea break was so authentic. Just wish it was a bit longer!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-lang-key="contact-title">Contact Us</h2>
+                    <p data-lang-key="contact-subtitle">Book your desert adventure today</p>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="name" data-lang-key="form-name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-lang-key="form-email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-lang-key="form-phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date" data-lang-key="form-date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="persons" data-lang-key="form-persons">Number of Persons</label>
+                            <input type="number" id="persons" name="persons" min="1" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-lang-key="form-message">Special Requests</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" data-lang-key="form-submit">Send Booking Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3 data-lang-key="footer-about">About Us</h3>
+                    <p data-lang-key="footer-about-text">We provide authentic desert experiences in Agafay, just outside Marrakesh, specializing in quad biking, camel rides, and traditional Moroccan tea sessions.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-lang-key="footer-links">Quick Links</h3>
+                    <a href="#home" data-lang-key="home">Home</a>
+                    <a href="#package" data-lang-key="package">Package</a>
+                    <a href="#about" data-lang-key="about">About</a>
+                    <a href="#contact" data-lang-key="contact">Contact</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 data-lang-key="footer-contact">Contact Info</h3>
+                    <p data-lang-key="footer-address">Travelingdany, Marrakesh, Morocco</p>
+                    <a href="mailto:trav.elingdany@gmail.com">trav.elingdany100@gmail.com</a>
+                    <a href="https://wa.me/212612612339" class="whatsapp-link">+212 612612339</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Agafay Desert Experience. <span data-lang-key="footer-rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
