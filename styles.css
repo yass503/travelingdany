@@ -44,6 +44,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    position: relative;
 }
 
 .logo {
@@ -62,16 +63,16 @@ header {
     align-items: center;
 }
 
-#main-nav ul {
+.nav-links {
     display: flex;
     list-style: none;
 }
 
-#main-nav ul li {
+.nav-links li {
     margin-left: 30px;
 }
 
-#main-nav ul li a {
+.nav-links li a {
     text-decoration: none;
     color: var(--dark-color);
     font-weight: 500;
@@ -79,24 +80,30 @@ header {
     font-size: clamp(0.9rem, 1.1vw, 1rem);
 }
 
-#main-nav ul li a:hover {
+.nav-links li a:hover {
     color: var(--primary-color);
 }
 
 .language-currency {
     display: flex;
-    align-items: center;
+    gap: 10px;
     margin-left: 30px;
 }
 
-select {
+.language-currency select {
     padding: 8px 12px;
     border-radius: 4px;
     border: 1px solid #ddd;
-    margin-left: 10px;
     background-color: white;
     font-size: 14px;
     cursor: pointer;
+    transition: var(--transition);
+}
+
+.language-currency select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(211, 84, 0, 0.2);
 }
 
 /* Mobile Menu Toggle */
@@ -108,6 +115,7 @@ select {
     color: var(--primary-color);
     cursor: pointer;
     padding: 5px;
+    z-index: 1001;
 }
 
 /* Hero Section */
@@ -503,15 +511,18 @@ footer {
         top: 70px;
         left: 0;
         width: 100%;
+        height: 100vh;
         background-color: white;
-        box-shadow: var(--box-shadow);
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
+        justify-content: flex-start;
+        align-items: center;
         transform: translateY(-100%);
         opacity: 0;
         transition: var(--transition);
         pointer-events: none;
+        z-index: 1000;
+        padding-top: 30px;
+        overflow-y: auto;
     }
 
     #main-nav.active {
@@ -520,18 +531,29 @@ footer {
         pointer-events: all;
     }
 
-    #main-nav ul {
+    .nav-links {
         flex-direction: column;
+        align-items: center;
         width: 100%;
+        margin-bottom: 30px;
     }
 
-    #main-nav ul li {
+    .nav-links li {
         margin: 15px 0;
     }
 
     .language-currency {
-        margin: 20px 0 0;
+        margin: 0;
+        flex-direction: column;
+        width: 80%;
+        max-width: 300px;
+        gap: 15px;
+    }
+
+    .language-currency select {
         width: 100%;
+        margin: 5px 0;
+        padding: 10px 15px;
     }
 
     .menu-toggle {
